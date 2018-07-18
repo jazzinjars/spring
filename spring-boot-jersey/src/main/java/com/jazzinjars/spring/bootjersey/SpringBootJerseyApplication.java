@@ -1,11 +1,11 @@
-package com.jazzinjars.spring.springbootjersey;
+package com.jazzinjars.spring.bootjersey;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = "com.jazzinjars.spring.springbootjersey")
+@EnableJpaRepositories(basePackages = "com.jazzinjars.spring.bootjersey")
 public class SpringBootJerseyApplication {
 
 	public static void main(String[] args) {

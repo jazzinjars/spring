@@ -1,4 +1,4 @@
-package com.jazzinjars.spring.springbootjersey.model;
+package com.jazzinjars.spring.bootjersey.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

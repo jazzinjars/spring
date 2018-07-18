@@ -1,4 +1,4 @@
-package com.jazzinjars.spring.springbootjersey;
+package com.jazzinjars.spring.bootjersey;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
