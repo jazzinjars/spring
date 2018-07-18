@@ -1,4 +1,4 @@
-package com.jazzinjars.spring.springbootjersey.exception;
+package com.jazzinjars.spring.bootjersey.exception;
 
 import org.glassfish.jersey.spi.ExtendedExceptionMapper;
 
@@ -8,7 +8,6 @@ import static javax.ws.rs.core.Response.Status.INTERNAL_SERVER_ERROR;
 import javax.ws.rs.InternalServerErrorException;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 

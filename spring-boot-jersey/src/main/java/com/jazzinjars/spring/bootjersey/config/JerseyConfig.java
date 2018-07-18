@@ -1,7 +1,7 @@
-package com.jazzinjars.spring.springbootjersey.config;
+package com.jazzinjars.spring.bootjersey.config;
 
-import com.jazzinjars.spring.springbootjersey.exception.UnhandledExceptionMapper;
-import com.jazzinjars.spring.springbootjersey.rest.resource.UserResource;
+import com.jazzinjars.spring.bootjersey.exception.UnhandledExceptionMapper;
+import com.jazzinjars.spring.bootjersey.rest.resource.UserResource;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.ServerProperties;
 import org.springframework.stereotype.Component;

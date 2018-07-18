@@ -1,6 +1,6 @@
-package com.jazzinjars.spring.springbootjersey.rest.resource;
+package com.jazzinjars.spring.bootjersey.rest.resource;
 
-import com.jazzinjars.spring.springbootjersey.model.User;
+import com.jazzinjars.spring.bootjersey.rest.model.User;
 
 import javax.validation.Valid;
 import javax.ws.rs.*;

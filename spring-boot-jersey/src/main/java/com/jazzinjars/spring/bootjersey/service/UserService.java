@@ -1,6 +1,6 @@
-package com.jazzinjars.spring.springbootjersey.service;
+package com.jazzinjars.spring.bootjersey.service;
 
-import com.jazzinjars.spring.springbootjersey.model.User;
+import com.jazzinjars.spring.bootjersey.rest.model.User;
 
 import java.util.List;
 
