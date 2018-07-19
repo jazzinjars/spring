@@ -26,4 +26,11 @@ public class User {
 
 	@NotNull
 	private String companyName;
+
+	public User(Integer userId, String firstName, String lastName, String companyName) {
+		this.userId = userId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.companyName = companyName;
+	}
 }

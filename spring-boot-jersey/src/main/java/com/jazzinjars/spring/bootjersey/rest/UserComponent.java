@@ -8,8 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 
 import javax.validation.Valid;
+import javax.ws.rs.Path;
 import java.util.List;
 
+@Path("/users")
 public class UserComponent implements UserResource {
 
 	@Autowired

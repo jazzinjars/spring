@@ -19,4 +19,11 @@ public class Person {
 	private String lName;
 	private String companyName;
 	private String mName;
+
+	public Person(int personId, String fName, String lName, String companyName, String mName) {
+		this.personId = personId;
+		this.fName = fName;
+		this.lName = lName;
+		this.mName = mName;
+	}
 }

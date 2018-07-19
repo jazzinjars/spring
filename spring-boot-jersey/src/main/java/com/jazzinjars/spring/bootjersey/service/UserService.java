@@ -1,16 +1,59 @@
 package com.jazzinjars.spring.bootjersey.service;
 
+import com.jazzinjars.spring.bootjersey.entity.Person;
+import com.jazzinjars.spring.bootjersey.mapper.UserConverter;
+import com.jazzinjars.spring.bootjersey.repository.PersonRepository;
 import com.jazzinjars.spring.bootjersey.rest.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public interface UserService {
+@Component
+@Transactional
+public class UserService implements CRUDService<User> {
 
-	User save(User user);
+	@Autowired
+	private PersonRepository personRepository;
 
-	User findById(Integer personId);
+	@Autowired
+	private UserConverter converter;
 
-	List<User> searchByCompanyName(String companyName);
+	@Override
+	public User save(User user) {
+		Person saved = personRepository.save(converter.convertFromDto(user));
+		return converter.convertFromEntity(saved);
+	}
 
-	void deleteById(Integer personId);
+	@Override
+	public User findById(Integer identifier) {
+		if (identifier.intValue() < 0) {
+			throw new RuntimeException("Caught unhandle runtime");
+		}
+		Person found = personRepository.findUser(identifier);
+		if (found != null) {
+			return converter.convertFromEntity(found);
+		}
+		return null;
+	}
+
+	@Override
+	public List<User> searchByCompanyName(String companyName) {
+		List<Person> persons = personRepository.findByCompany(companyName);
+		List<User> users = new ArrayList<>();
+
+		for (Person person : persons) {
+			users.add(converter.convertFromEntity(person));
+		}
+		return users;
+	}
+
+	@Override
+	public void deleteById(Integer identifier) {
+		personRepository.deleteById(identifier);
+	}
 }
