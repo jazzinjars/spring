@@ -20,6 +20,8 @@ public class Person {
 	private String companyName;
 	private String mName;
 
+	public Person() {}
+
 	public Person(int personId, String fName, String lName, String companyName, String mName) {
 		this.personId = personId;
 		this.fName = fName;

@@ -7,6 +7,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
+@Path("/users")
 @Produces( {MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML} )
 @Consumes( {MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML} )
 public interface UserResource {

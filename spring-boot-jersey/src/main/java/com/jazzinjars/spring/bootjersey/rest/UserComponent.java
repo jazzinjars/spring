@@ -5,13 +5,13 @@ import com.jazzinjars.spring.bootjersey.rest.model.User;
 import com.jazzinjars.spring.bootjersey.rest.resource.UserResource;
 import com.jazzinjars.spring.bootjersey.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import javax.validation.Valid;
-import javax.ws.rs.Path;
 import java.util.List;
 
-@Path("/users")
+@Component
 public class UserComponent implements UserResource {
 
 	@Autowired

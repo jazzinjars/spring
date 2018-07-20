@@ -14,8 +14,8 @@ import javax.ws.rs.core.Response;
 
 public class JAXRSClientTest {
 
-//	@Test
-	public void givenJaxRsClient_thenRequestIsOK() {
+	@Test
+	public void givenJaxRsClient_whenPostEntity_thenRequestIsOK() {
 		Client client = ClientBuilder.newClient();
 		WebTarget target = client.target(ClientDataConstants.USER_URI);
 
