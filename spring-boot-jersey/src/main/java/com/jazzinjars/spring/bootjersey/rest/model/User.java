@@ -27,6 +27,8 @@ public class User {
 	@NotNull
 	private String companyName;
 
+	public User() {}
+
 	public User(Integer userId, String firstName, String lastName, String companyName) {
 		this.userId = userId;
 		this.firstName = firstName;

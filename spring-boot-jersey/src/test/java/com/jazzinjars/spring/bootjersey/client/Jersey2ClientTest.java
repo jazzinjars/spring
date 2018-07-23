@@ -12,7 +12,7 @@ public class Jersey2ClientTest {
 	@Test
 	public void givenJerseyClient_whenGetEntity_thenRequestIsOK() {
 		JerseyClient client = JerseyClientBuilder.createClient();
-		Response response = client.target(ClientDataConstants.USER_URI + "?companyName=Stark Enterprise").request().get();
+		Response response = client.target(ClientDataConstants.USER_URI + "?companyName=StarkEnterprise").request().get();
 
 		System.out.println("Get User status: " + response.getStatus());
 

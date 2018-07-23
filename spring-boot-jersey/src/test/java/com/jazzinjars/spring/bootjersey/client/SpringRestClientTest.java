@@ -18,6 +18,6 @@ public class SpringRestClientTest {
 
 		System.out.println("Create User status: " + responseEntity.getStatusCode());
 
-		Assert.assertEquals(200, responseEntity.getStatusCode());
+		Assert.assertEquals(200, responseEntity.getStatusCode().value());
 	}
 }
