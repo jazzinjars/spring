@@ -1,0 +1,12 @@
+= Spring Samples
+
+
+This workspace try to sum up some of the Projects used inside the Spring ecosystem.
+
+Some samples/tests have documentation, otherwise read the code.
+
+== Specifications Index
+
+- link:https://github.com/jazzinjars/spring/tree/master/spring-boot-jersey[Spring Boot with Jersey]
+
+== How to execute Samples
