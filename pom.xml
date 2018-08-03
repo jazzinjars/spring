@@ -24,6 +24,8 @@
         <java.min.version>1.8</java.min.version>
         <maven.min.version>3.0.0</maven.min.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spring-cloud.version>Dalston.SR3</spring-cloud.version>
 
         <maven.test.skip>false</maven.test.skip>
         <skipTests>false</skipTests>
