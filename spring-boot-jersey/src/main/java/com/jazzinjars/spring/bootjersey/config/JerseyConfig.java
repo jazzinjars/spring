@@ -1,6 +1,7 @@
 package com.jazzinjars.spring.bootjersey.config;
 
 import com.jazzinjars.spring.bootjersey.exception.UnhandledExceptionMapper;
+import com.jazzinjars.spring.bootjersey.rest.UserComponent;
 import com.jazzinjars.spring.bootjersey.rest.resource.UserResource;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.ServerProperties;
@@ -16,7 +17,7 @@ public class JerseyConfig extends ResourceConfig {
 
 	private void registerApplicationApis() {
 		register(UnhandledExceptionMapper.class);
-		register(UserResource.class);
+		register(UserComponent.class);
 	}
 
 	private void registerApplicationProperties() {
