@@ -10,8 +10,6 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <!-- https://github.com/TechPrimers/spring-security-oauth-example -->
-
     <artifactId>spring-security</artifactId>
     <packaging>pom</packaging>
     <name>Spring: Security</name>

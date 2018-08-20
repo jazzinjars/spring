@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <!-- https://github.com/TechPrimers/spring-security-oauth-example -->
+
     <name>spring-security-oauth2</name>
     <description>Demo project for Spring Boot Security with Oauth2</description>
 
