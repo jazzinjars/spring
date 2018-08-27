@@ -9,6 +9,8 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
+	<!-- https://examples.javacodegeeks.com/enterprise-java/rest/jax-rs-tutorial-jersey-restful-web-services/ --> 
+
 	<artifactId>spring-boot-jersey</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
