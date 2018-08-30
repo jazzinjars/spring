@@ -30,6 +30,8 @@
         <spring-cloud.version>Dalston.SR3</spring-cloud.version>
         <spring.boot.version>2.0.3.RELEASE</spring.boot.version>
         <spring.data.version>1.4.1.RELEASE</spring.data.version>
+        <spring.oauth.version>2.3.3.RELEASE</spring.oauth.version>
+        <spring.jwt.version>1.0.9.RELEASE</spring.jwt.version>
 
         <maven.test.skip>false</maven.test.skip>
         <skipTests>false</skipTests>
@@ -164,6 +166,13 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.vintage</groupId>
