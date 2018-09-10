@@ -27,8 +27,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- SPRING properties -->
-        <spring-cloud.version>Dalston.SR3</spring-cloud.version>
-        <spring.boot.version>2.0.3.RELEASE</spring.boot.version>
+        <spring.cloud.version>2.0.1.RELEASE</spring.cloud.version>
+        <spring.boot.version>2.0.4.RELEASE</spring.boot.version>
         <spring.data.version>1.4.1.RELEASE</spring.data.version>
         <spring.oauth.version>2.3.3.RELEASE</spring.oauth.version>
         <spring.jwt.version>1.0.9.RELEASE</spring.jwt.version>
@@ -48,6 +48,7 @@
     <modules>
         <module>security</module>
         <module>spring-boot-jersey</module>
+        <module>cloud</module>
     </modules>
     
     <!-- ======== MAVEN BUILD ======== -->
@@ -65,7 +66,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>3.8.0</version>
                 <configuration>
                     <source>${java.min.version}</source>
                     <target>${java.min.version}</target>
