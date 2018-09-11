@@ -1,4 +1,4 @@
-package com.jazzinjars.spring.cloud.serverconfig;
+package com.jazzinjars.spring.cloud.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
