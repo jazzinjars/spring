@@ -6,4 +6,17 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/jazzinjars/spring/tree/master/cloud/config-server-git/src/main/resources
+          #Create a github repo to store and access correctly to src/main/resources/wa-tolls/* properties
+          uri: https://github.com/jazzinjars/spring-cloud-config-server-git
+          username: jazzinjars
+          password: putavalidpassword
+          search-paths:
+            - 'station*'
+          repos:
+            perf:
+              pattern:
+                - "*/perf"
+              #Create a github repo to store and access correctly to src/main/resources/wa-tolls-perf/* properties
+              uri: https://github.com/jazzinjars/spring-cloud-config-server-git-perf
+              search-paths:
+                - 'station*'
