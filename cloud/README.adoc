@@ -1,0 +1,13 @@
+= Spring Cloud Sample
+
+This workspace try to show a sample about Spring Cloud Platform and how to deploy and design microservices with
+Spring Boot and Spring Cloud.
+
+Some samples/tests have documentation, otherwise read the code.
+
+== Spring Cloud Config Server
+- link:https://github.com/jazzinjars/spring/tree/master/cloud/config-server-git[Config Server]
+
+== How to execute Config Server
+Just execute the main method of `SpringCloudConfigServerGitApplication class` and run from Postman or other REST client
+ `http://localhost:8888/s1rates` and others endpoints.

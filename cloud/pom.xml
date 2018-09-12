@@ -16,6 +16,8 @@
 
     <modules>
         <module>config-server</module>
+        <module>config-server-git</module>
+        <module>config-client</module>
     </modules>
 
     <dependencies>
@@ -23,14 +25,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
             <version>${spring.boot.version}</version>
-        </dependency>
-
-        <!-- TEST DEPENDENCIES -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring.boot.version}</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
